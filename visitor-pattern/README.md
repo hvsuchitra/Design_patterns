@@ -17,7 +17,8 @@ Program with visitors to determine features in two input files that have integer
 10.	Design a visitor, MissingIntsVisitor that determines the 2 digit integers (between 00 and 99) that are missing in MyArray and stores them in an appropriate data structure in Results.
 11.	The output files should contain a single integer per line.
 12.	Use a singleton Logger and design your own debugging scheme.
-13.	The driver should accept the input file names, output file names, and debug value, via the command line.
+14.	The driver should accept the input file names, output file names, and debug value, via the command line.
+
               a.	-Dinput1 - First input file containing 2 digits integers per line.
               b.	-Dinput2 - Second input file containing 2 digits integers per line.
               c.	-Dcommonintsout - Output file to store results of applying CommonIntsVisitor.
@@ -25,7 +26,10 @@ Program with visitors to determine features in two input files that have integer
                           i.	Recommended for this assignment - upload to the same output file. Include headings to indicate which MyArray or input file the output corresponds to.
                           ii.	Also acceptable - upload to missing integers for each MyArray object to a different output file.
               e.	-Ddebug - Debug value.
+              
+              
 14.	The driver should do the following:
+
           a.	Create required instances of Results.
           b.	Create instance of FileProcessor.
           c.	Create instances of the visitors.
@@ -34,7 +38,9 @@ Program with visitors to determine features in two input files that have integer
           f.	Apply CommonIntsVisitor to determine common ints in ADTs stored in MyArrayList.
           g.	Apply MissingIntsVisitor separately to each of the MyArray instances.
           h.	Call appropriate methods in Result instances to print the output of each of the visitors.
+          
 15.	Helpers:
+
           a.	There is only a single visitor interface.
           b.	Unlike the traditional viistor pattern where there is just a single visit(...) method in the Visitor interface, you will need to overload the method here for each of the two visitors.
           c.	When calling methods on the ADTs/Elements make sure to cast to the appropriate interface and then call the method. For example, ADT methods should be called by casting to the interface that defines the API for the ADT.
