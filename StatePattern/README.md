@@ -4,11 +4,11 @@
 **Project Description**
 Design and Implement a program for Youtube to categorize a single channel based on popularity.
 
-->	A Youtube channel has a popularity score, defined as The average popularity score of all videos contained in the channel. Based on its popularity score, a channel can be in one of the following states.
-    ->	UNPOPULAR - This is the starting state of a channel. For a channel to be in this state, its popularity score should in the range [0, 1000].
-    ->	MILDLY_POPULAR - For a channel to be in this state, its popularity score should be in the range (1000, 10000].
-    ->	HIGHLY_POPULAR - For a channel to be in this state, its popularity score should be in the range (10000, 100000].
-    ->	ULTRA_POPULAR - For a channel to be in this state, its popularity score should be in the range (100000, INT_MAX].  
+1.	A Youtube channel has a popularity score, defined as The average popularity score of all videos contained in the channel. Based on its popularity score, a channel can be in one of the following states.
+    1)	UNPOPULAR - This is the starting state of a channel. For a channel to be in this state, its popularity score should in the range [0, 1000].
+    2)	MILDLY_POPULAR - For a channel to be in this state, its popularity score should be in the range (1000, 10000].
+    3)	HIGHLY_POPULAR - For a channel to be in this state, its popularity score should be in the range (10000, 100000].
+    4)	ULTRA_POPULAR - For a channel to be in this state, its popularity score should be in the range (100000, INT_MAX].  
 Note: () represents an open interval (not including end points) and [] represents a closed interval (including endpoints). For example, X ∈ (10, 20] iff X ∈ R AND 10 < X ≤ 20.
 Note: The popularity score of a video should not be negative. Therefore, popularity score of a video should be set to 0 if it is negative.
 Question to ask yourself at this point - Is Channel a state or a context?
