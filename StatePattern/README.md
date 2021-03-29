@@ -64,6 +64,8 @@ Your program should accept two files from the commandline - input file and outpu
 **EXAMPLES** 
 
 **input**
+
+
 ADD_VIDEO::video1
 ADD_VIDEO::video2
 METRICS__video1::[VIEWS=1000,LIKES=20,DISLIKES=20]
@@ -82,6 +84,8 @@ REMOVE_VIDEO::video1
 AD_REQUEST__video3::LEN=15
 REMOVE_VIDEO::video3
 REMOVE_VIDEO::video4
+
+
 
 **output**
 
