@@ -24,6 +24,26 @@ After performing rotation, the sentence would now read "eWelcom to the urseco.".
 ->	Calculates the following metrics and write them to the metrics file (one metric per line).
 =>	AVG_NUM_WORDS_PER_SENTENCE - Average number of words per sentence. Round to 2 decimal places. Format: AVG_NUM_WORDS_PER_SENTENCE = <value>
 =>	AVG_WORD_LENGTH - Average length (number of characters) of a word in the input file. Round to 2 decimal places. Format: AVG_WORD_LENGTH = <value>
+  
+**INPUT**
+Your program should accept three files from the commandline - input file, output file and metrics file. These file names/paths will be provided using the following command-line options. 
+        •	-Dinput: Input file path.
+        •	-Doutput: Path to the output file to which the sentences with the sorted words are written.
+        •	-Dmetrics: Path to the metrics file to which the metrics are written (one per line) in their respective formats.
+        
+**EXAMPLES**
+
+**INPUT**
+Welcome to design patterns summer 2020.
+Start working on this assignment quickly.
+**OUTPUT**
+
+eWelcom to igndes ernspatt ummers 2020.
+tStar ngworki no this nmentassig uicklyq.
+
+**metrics**
+AVG_NUM_WORDS_PER_SENTENCE - 6.0
+AVG_WORD_LENGTH - 5.67
 
 
 -----------------------------------------------------------------------
