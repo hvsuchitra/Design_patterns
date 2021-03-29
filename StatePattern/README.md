@@ -13,26 +13,26 @@ Note: () represents an open interval (not including end points) and [] represent
 Note: The popularity score of a video should not be negative. Therefore, popularity score of a video should be set to 0 if it is negative.
 Question to ask yourself at this point - Is Channel a state or a context?
 Enumerate the names of the states.
-->	A channel can hold multiple videos. The popularity score of a video is defined by the following three metrics.
-    ->	Total number of views (≥ 0).
-    ->	Total number of likes (≥ 0).
-    ->	Total number of dislikes (≥ 0).
+2)	A channel can hold multiple videos. The popularity score of a video is defined by the following three metrics.
+    1)	Total number of views (≥ 0).
+    2)	Total number of likes (≥ 0).
+    3)	Total number of dislikes (≥ 0).
 Using the above information, the popularity score of a video at any point is given by the formula #Views + 2 * (#Likes - #Dislikes) where # signifies total count so far. The data for number of views, likes and dislikes are provided in the input file.
 Question to ask yourself at this point - How and where are videos stored?
-->	The current state of the channel determines whether advertisement requests are approved or rejected based on how long they are. The following are the rules for the same.
-    ->	When state=UNPOPULAR, advertisements of length in range (1,10] are approved and the rest are rejected.
-    ->	When state=MILDLY_POPULAR, advertisements of length in range (1, 20] are approved and the rest are rejected.
-    ->	When state=HIGHLY_POPULAR, advertisements of length in range (1, 30] are approved and the rest are rejected.
-    ->	When state=ULTRA_POPULAR, advertisements of length in range (1, 40] are approved and the rest are rejected.
+3)	The current state of the channel determines whether advertisement requests are approved or rejected based on how long they are. The following are the rules for the same.
+    1)	When state=UNPOPULAR, advertisements of length in range (1,10] are approved and the rest are rejected.
+    2)	When state=MILDLY_POPULAR, advertisements of length in range (1, 20] are approved and the rest are rejected.
+    3)	When state=HIGHLY_POPULAR, advertisements of length in range (1, 30] are approved and the rest are rejected.
+    4)	When state=ULTRA_POPULAR, advertisements of length in range (1, 40] are approved and the rest are rejected.
 The requests to add advertisements of a certain length are also provided via the input file.
 Question to ask yourself at this point - Where are the advertisement requests processed?
 
 **Input Processing and Control flow**
 1.	The input file is processed one line at a time.
 2.	Each line can correspond to one of the following.
-  *	Adding a video to the channel. Input format: ADD_VIDEO::<video name>.
-  *	Removing a video from the channel. Input format: REMOVE_VIDEO::<video name>.
-  *	Views, Likes and Dislikes. Input format: METRICS__<video name>::[VIEWS=<delta in #views>,LIKES=<delta in #likes>,DISLIKES=<delta in #dislikes>].
+  1)	Adding a video to the channel. Input format: ADD_VIDEO::<video name>.
+  2)	Removing a video from the channel. Input format: REMOVE_VIDEO::<video name>.
+  3)	Views, Likes and Dislikes. Input format: METRICS__<video name>::[VIEWS=<delta in #views>,LIKES=<delta in #likes>,DISLIKES=<delta in #dislikes>].
 Note: There are no spaces before or after the comma character.
 Note: Views, Likes and Dislikes MUST be integers.
 *	Advertisement requests. Input format: AD_REQUEST__<video name>::LEN=<length>.
