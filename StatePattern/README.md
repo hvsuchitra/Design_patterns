@@ -5,25 +5,25 @@
 Design and Implement a program for Youtube to categorize a single channel based on popularity.
 
 ->	A Youtube channel has a popularity score, defined as The average popularity score of all videos contained in the channel. Based on its popularity score, a channel can be in one of the following states.
-    *	UNPOPULAR - This is the starting state of a channel. For a channel to be in this state, its popularity score should in the range [0, 1000].
-    *	MILDLY_POPULAR - For a channel to be in this state, its popularity score should be in the range (1000, 10000].
-    *	HIGHLY_POPULAR - For a channel to be in this state, its popularity score should be in the range (10000, 100000].
-    *	ULTRA_POPULAR - For a channel to be in this state, its popularity score should be in the range (100000, INT_MAX].
+    ->	UNPOPULAR - This is the starting state of a channel. For a channel to be in this state, its popularity score should in the range [0, 1000].
+    ->	MILDLY_POPULAR - For a channel to be in this state, its popularity score should be in the range (1000, 10000].
+    ->	HIGHLY_POPULAR - For a channel to be in this state, its popularity score should be in the range (10000, 100000].
+    ->	ULTRA_POPULAR - For a channel to be in this state, its popularity score should be in the range (100000, INT_MAX].  
 Note: () represents an open interval (not including end points) and [] represents a closed interval (including endpoints). For example, X ∈ (10, 20] iff X ∈ R AND 10 < X ≤ 20.
 Note: The popularity score of a video should not be negative. Therefore, popularity score of a video should be set to 0 if it is negative.
 Question to ask yourself at this point - Is Channel a state or a context?
 Enumerate the names of the states.
 ->	A channel can hold multiple videos. The popularity score of a video is defined by the following three metrics.
-    *	Total number of views (≥ 0).
-    *	Total number of likes (≥ 0).
-    *	Total number of dislikes (≥ 0).
+    ->	Total number of views (≥ 0).
+    ->	Total number of likes (≥ 0).
+    ->	Total number of dislikes (≥ 0).
 Using the above information, the popularity score of a video at any point is given by the formula #Views + 2 * (#Likes - #Dislikes) where # signifies total count so far. The data for number of views, likes and dislikes are provided in the input file.
 Question to ask yourself at this point - How and where are videos stored?
 ->	The current state of the channel determines whether advertisement requests are approved or rejected based on how long they are. The following are the rules for the same.
-    *	When state=UNPOPULAR, advertisements of length in range (1,10] are approved and the rest are rejected.
-    *	When state=MILDLY_POPULAR, advertisements of length in range (1, 20] are approved and the rest are rejected.
-    *	When state=HIGHLY_POPULAR, advertisements of length in range (1, 30] are approved and the rest are rejected.
-    *	When state=ULTRA_POPULAR, advertisements of length in range (1, 40] are approved and the rest are rejected.
+    ->	When state=UNPOPULAR, advertisements of length in range (1,10] are approved and the rest are rejected.
+    ->	When state=MILDLY_POPULAR, advertisements of length in range (1, 20] are approved and the rest are rejected.
+    ->	When state=HIGHLY_POPULAR, advertisements of length in range (1, 30] are approved and the rest are rejected.
+    ->	When state=ULTRA_POPULAR, advertisements of length in range (1, 40] are approved and the rest are rejected.
 The requests to add advertisements of a certain length are also provided via the input file.
 Question to ask yourself at this point - Where are the advertisement requests processed?
 
