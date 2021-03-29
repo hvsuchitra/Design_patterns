@@ -21,9 +21,13 @@ For example,
 consider the sentence "Welcome to the course.". As it is mentioned that indices start from 1, the index of "Welcome" is 1, "to" is 2, "the" is 3 and "course" is 4.
 We therefore need to rotate "Welcome" by 1 position, "to" by 2 positions, "the" by 3 positons and "course" by 4 positions to the right.
 After performing rotation, the sentence would now read "eWelcom to the urseco.". This rotated sentence is to be written to the output file.
+
+
 ->	Calculates the following metrics and write them to the metrics file (one metric per line).
 =>	AVG_NUM_WORDS_PER_SENTENCE - Average number of words per sentence. Round to 2 decimal places. Format: AVG_NUM_WORDS_PER_SENTENCE = <value>
 =>	AVG_WORD_LENGTH - Average length (number of characters) of a word in the input file. Round to 2 decimal places. Format: AVG_WORD_LENGTH = <value>
+  
+  
   
 **INPUT**
 
