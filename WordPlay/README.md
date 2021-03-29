@@ -32,12 +32,10 @@ Your program should accept three files from the commandline - input file, output
         •	-Dmetrics: Path to the metrics file to which the metrics are written (one per line) in their respective formats.
         
 **EXAMPLES**
-
 **INPUT**
 Welcome to design patterns summer 2020.
 Start working on this assignment quickly.
 **OUTPUT**
-
 eWelcom to igndes ernspatt ummers 2020.
 tStar ngworki no this nmentassig uicklyq.
 
