@@ -2,18 +2,23 @@
 
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
+
 **Project Discription:**
 Develop a program, using Java, to process an input file containing sentences and also to calculate certain metrics.!
 •	An input file contains sentences, one per line. Each sentence contains words delimited by <space> character. Each sentence terminates with a period.
 •	Each sentence is made up of alphanumeric words (characters in the set [a-zA-Z0-9]).
 •	The program  process the input file word by word.
 •	The program does the following.
+  
 ->	Rotate each word in a sentence to the right by x places where x is the index of the word in the sentence.
+
 Note: Indexing starts from 1. So first word is rotated by 1 place, second by 2 places and so on.
 Note: Only the characters of a word should be rotated. The order of words in the sentence should remain as is.
 Note: The rotation should be case senstitive. An upper case character in the input should remain in upper case in the output and lower case character should remain in lower case.
 Note: Period characters remain unchanged.
-For example, consider the sentence "Welcome to the course.". As it is mentioned that indices start from 1, the index of "Welcome" is 1, "to" is 2, "the" is 3 and "course" is 4.
+
+For example, 
+consider the sentence "Welcome to the course.". As it is mentioned that indices start from 1, the index of "Welcome" is 1, "to" is 2, "the" is 3 and "course" is 4.
 We therefore need to rotate "Welcome" by 1 position, "to" by 2 positions, "the" by 3 positons and "course" by 4 positions to the right.
 After performing rotation, the sentence would now read "eWelcom to the urseco.". This rotated sentence is to be written to the output file.
 ->	Calculates the following metrics and write them to the metrics file (one metric per line).
